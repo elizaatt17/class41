@@ -161,6 +161,11 @@ class Game {
           camera.position.y = cars[index - 1].position.y;
         }
       }
+      if(this.playerMoving){
+        player.positionY+=5;
+        player.update();
+
+      }
 
       // handling keyboard events
       this.handlePlayerControls();
